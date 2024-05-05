@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- custom css link -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Js progrmming Language</title>
+
+</head>
+<body>
+<!-- js code -->
+<!-- 
+<h1 id="titel">Hello world </h1>
+
+<h2 id="titel2"></h2>
+
+<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<button id="btn" onclick="afterclick()">Download</button>
+
+<div id="image-gallery" class="mt-5">
+    <div class="row">
+        <div class="col-md-3" >
+            <div class="card my-3">
+              <div class="card-body"id="card1">
+                This is some text within a card body.
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="col-md-3" >
+      <div class="card my-3">
+         <div class="card-body"id="card2">
+            This is some text within a card body.
+        </div>
+      </div>
+   </div>
+  <div class="col-md-3" >
+      <div class="card my-3">
+         <div class="card-body"id="card3">
+            This is some text within a card body.
+          </div>
+        </div>
+     </div> -->
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card m-3" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+              <button class="btn btn-sm btn-danger" onclick="afterclick()">Click Hear</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card m-3" id="card1" style="width: 18rem;" onmouseover="mouseOver()" onmouseout="mouseOut()">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+ -->
+
+
+
+<!-- <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+<p class="text"><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+
+
+
+
+
+<div class="Loading">
+    <span>Loading...</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script>
+
+
+
+    // var text =document.getElementsByClassName('text');
+    // var p =document.getElementsByTagName('p');
+    // var span = document.querySelector('.text span');
+
+    // span.style.color = 'red';
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // var h1 = document.getElementById('titel').innerHTML;
+  // document.write(h1);
+
+
+  // var h1 = document.getElementById('titel');
+  // var h2 = document.getElementById('titel2');
+  // var btn = document.getElementById('btn');
+  // var card1 = document.getElementById('card1');
+  // var card2 = document.getElementById('card2');
+  // var card3 = document.getElementById('card3');
+
+
+  // // h2.innerHTML='subtitle text'
+
+
+
+  // // h1.style.color = 'red';
+  // // h2.style.color = 'green';
+
+  // btn.style.background = 'black';
+  // btn.style.color = 'white';
+  // btn.style.height ='40px';
+  // btn.style.width ='140px';
+
+
+  // card1.style.background = 'green '
+  // card1.style.color = 'white'
+
+  // card2.style.background = 'red'
+  // card2.style.color = 'white'
+
+  // card3.style.background = 'purple'
+  // card3.style.color = 'white'
+
+
+  // function afterclick(){
+  //   btn.style.background ='red';
+  //   btn.style.border ='none';
+  //   btn.style.color = 'black';
+  //   btn.innerHTML ='comlete!';
+  //   h1.style.color ='green';
+
+
+  //   card1.style.display = 'none'
+      
+  // }
+
+
+
+  var card = document.getElementById('card1');
+
+  function afterclick(){
+    // card.style.background = 'green';
+
+  }
+  function mouseOver(){
+    card.style.background = 'green';
+  }
+
+
+   function mouseOut(){
+    card.style.background = 'white';
+  }
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// document.write( ' <h3> This is our first js code</h3> <br>')
+	// document .write( 'This is our first js code<br>')
+
+	// alert('Hello world')
+
+
+	// var name = 'Muhammad Fysal';
+	// var age  = 19;
+	// var cgpa = 3.00;
+	
+	// document.write('My name is'+ name +'and I am'+ age +'years old.My current cgpz '+ cgpa)
+
+
+
+
+
+
+
+	// var num1 = 300;
+	// var num2 = 300;
+
+
+	// if(num1 > num2){
+	// 	document.write('Number one is bigger!')
+	// }
+	// if(num1 < num2){
+	// 	document.write('Number two is bigger!')
+	// }
+	// if(num1 == num2){
+	// 	document.write('Both are equal!')
+	// }
+
+
+
+
+
+
+
+	// var num1 = 600;
+	// var num2 = 400;
+	// var num3 = 500;
+
+
+
+	// if( num1 > num2 && num1 > num3 ){
+	// 	document.write('num1 is bigger!');
+	// }
+
+	// if( num2 > num1 && num2 > num3 ){
+	// 	document.write('num2 is bigger!');
+	// }
+
+	// if( num3 > num1 && num3 > num2 ){
+	// 	document.write('num3 is bigger!');
+	// }
+
+
+
+
+
+
+
+        // var number = 12;
+        // var result = 0;
+
+        // result = number%2;
+
+        // if( result == 0){
+        // 	document.write('even');
+        // }
+        // if( result != 0){
+        // 	document.write('odd');
+        // }
+
+
+
+
+
+        // scend way//
+
+
+
+
+         // var number = 11;
+         // var result = 0;
+
+         // result = number%2;
+
+         // if( result == 0){
+         // 	document.write('even');
+         // }
+         // else{
+         // 	document.write('odd');
+         // }
+
+
+
+
+
+
+
+
+
+         // var day_num = 2;
+
+         // if (day_num == 1) {
+         // 	document.write('Saturday');
+         // }
+         // if (day_num == 2) {
+         // 	document.write('Sunday');
+         // }
+         // if (day_num == 3) {
+         // 	document.write('Monday');
+         // }
+         // if (day_num == 4) {
+         // 	document.write('Tuesday');
+         // }
+         // if (day_num == 5) {
+         // 	document.write('Wednesday');
+         // }
+         // if (day_num == 6) {
+         // 	document.write('Thusday');
+         // }
+         // if (day_num == 7) {
+         // 	document.write('Friday');
+         // }
+
+
+
+
+         // take 6 subjects marks of a student and show him his grade based on below conditon
+
+         // 90-100 = A+
+         // 80-89 = A
+         // 70-79 = B
+         // 60-69 = C
+         // 50-59 = D
+         // 40-49 = E
+         // 0-32 = congratulations!
+
+
+         // var bangla = 67;
+         // var english =85;
+         // var math = 95;
+         // var science = 82;
+         // var ss = 72;
+         // var religion = 80;
+
+
+
+         // var total = 0;
+         // var avg =0;
+
+
+         // total = bangla+english+math+science+ss+religion
+
+         // document.write('total Maeks'+total+'<br>')
+
+         // avg = parseInt (total/6);
+
+         // document.write('Average marks'+avg+'<br>')
+
+         // if (avg >= 90 && avg <=100){
+         // 	document.write('Grade A+ <br>')
+         // }
+         //  if (avg >= 80 && avg <90){
+         // 	document.write('Grade A <br>')
+         // }
+         //  if (avg >= 70 && avg <80){
+         // 	document.write('Grade B <br>')
+         // }
+         //  if (avg >= 60 && avg <70){
+         // 	document.write('Grade C <br>')
+         // }
+         //  if (avg >= 50 && avg <60){
+         // 	document.write('Grade D <br>')
+         // }
+         //  if (avg >= 40 && avg <50){
+         // 	document.write('Grade E <br>')
+         // }
+         //  if (avg >= 0 && avg <33){
+         // 	document.write('Grade congratulations! <br>')
+         // }
+
+
+
+         // var unit = 423;
+         // var subtotal = 0;
+         // var total = 0;
+
+         // if ( unit <=50) {
+         // 	subtotal = unit*3
+         // }
+         // if ( unit > 50 && unit <=150) {
+         // 	subtotal = 50*3 + (unit-50)*5;
+         // }
+         //  if ( unit > 150 && unit <=250) {
+         // 	subtotal = 50*3 + 100*5 + (unit-150)*7;
+         // }
+         //   if ( unit > 250) {
+         // 	subtotal = 50*3 + 100*5+ 100*7 +(unit-250)*10;
+         // }
+
+         // document.write('subtotal cost:'+subtotal + '<br>')
+         // total = subtotal + (subtotal*0.15);
+
+         // document.write('total cost:'+total);
+
+
+
+
+
+         // var letter = 'I';
+
+         // if(letter == 'a'|| letter == 'e' || letter == 'i'|| letter == 'o' || letter == 'u'||
+
+         // 	letter == 'A'|| letter == 'E' || letter == 'I'|| letter == 'O' || letter == 'U'){
+         // 	document.write('vowel');
+         // }else{
+         // 	document.write('consonent')
+         // }
+
+// ***************************************************  
+               // secnde class
+
+            // for(var i=1; i<50; i++){
+            // 	if (i%3 == 0){
+            // 		document.write(i + "<br>")
+            // 	}
+            // } 
+
+
+
+            // var i=1;
+            // while(i<20){
+            // 	if (i%5 == 0){
+            // 		document.write(i + "<br>");
+            // 	}
+            // 	i++;
+            // }
+
+
+            // var i=1;
+            // do{
+            // 	if (i%5 == 0){
+            // 		document.write(i + "<br>");
+            // 	}
+            // 	i++;
+
+            // }while(i<30);
+
+
+
+
+            // var sum = 0;
+
+            // for (var i =1; i<=20; i++) {
+            //     sum = sum+i;
+            // }
+            // document.write(sum);
+
+
+
+
+
+
+            // var num = 40;
+            // var res = 0;
+
+            // for( var i=1; i<=10; i++){
+            //     res = num * i;
+            //     document.write(num +'*'+ i + '=' + res + '<br>');
+            // }
+
+
+
+
+            // var number = 155;
+            // var reminder = 0;
+            // var count = 0;
+            // var sum = 0;
+
+            // while (number != 0){
+            //     reminder = number % 10;
+            //     number = parseInt(number / 10);
+            //     count ++;
+            //     sum = sum + reminder;
+            // }
+            // document.write(count );
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
